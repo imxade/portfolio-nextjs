@@ -1,0 +1,57 @@
+import '@/app/globals.css'
+import type { Metadata } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
+import { siteName, siteTitle, siteDescription } from '@/config'
+import FloatingNavbar from '@/components/navbar'
+import { ThemeProvider } from 'next-themes'
+
+const geistSans = Geist({
+	variable: '--font-geist-sans',
+	subsets: ['latin']
+})
+
+const geistMono = Geist_Mono({
+	variable: '--font-geist-mono',
+	subsets: ['latin']
+})
+
+export const metadata: Metadata = {
+	applicationName: siteName,
+	title: {
+		default: siteTitle,
+		template: `%s | ${siteName}`
+	},
+	description: siteDescription,
+	manifest: '/manifest.json',
+	appleWebApp: {
+		capable: true,
+		statusBarStyle: 'default',
+		title: siteTitle
+	},
+	formatDetection: {
+		telephone: false
+	},
+	icons: {
+		shortcut: '/favicon.ico',
+		apple: [{ url: '/icons/apple-touch-icon.png', sizes: '180x180' }]
+	}
+}
+
+export default function RootLayout({
+	children
+}: Readonly<{
+	children: React.ReactNode
+}>) {
+	return (
+		<html lang="en" suppressHydrationWarning>
+			<body
+				className={`${geistSans.variable} ${geistMono.variable} mx-auto max-w-5xl antialiased`}
+			>
+				<ThemeProvider>
+					{children}
+					<FloatingNavbar />
+				</ThemeProvider>
+			</body>
+		</html>
+	)
+}

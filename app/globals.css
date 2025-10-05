@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+@plugin "daisyui" {
+	themes:
+		dracula --default --prefersdark,
+		cupcake;
+}
+@layer components {
+	.btn:hover {
+		background-color: rgba(0, 0, 0, 0.2) !important;
+	}
+}
+/* Make all buttons slightly rounded */
+.btn {
+	border-radius: 6px !important;
+}
+/*
+ Fix: Fumadocs and DaisyUI conflict
+.prose {
+  all: unset;
+}
+*/
