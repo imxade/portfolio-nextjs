@@ -13,9 +13,9 @@ export default async function RecentPosts() {
 
 				<Link
 					href="/posts"
-					className="text-muted-foreground hover:text-foreground mt-8 inline-flex items-center gap-2 underline decoration-1 underline-offset-2 transition-colors"
+					className="link btn btn-ghost mt-8 inline-flex gap-2 underline-offset-2"
 				>
-					<span>All posts</span>
+					All posts
 				</Link>
 			</div>
 		</section>
