@@ -1,5 +1,3 @@
-'use client'
-
 import { siteOwner, About, profilePic } from '@/config'
 import SocialButtons from '@/components/socialButtons'
 import Image from 'next/image'

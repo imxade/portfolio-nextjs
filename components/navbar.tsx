@@ -1,5 +1,3 @@
-'use client'
-
 import { routes, siteName } from '@/config'
 import ThemeToggle from '@/components/themeToggle'
 import Link from 'next/link'

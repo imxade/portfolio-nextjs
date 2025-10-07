@@ -1,15 +1,8 @@
-'use client'
-
 import parse from 'html-react-parser'
 import { getSocials, socialsType } from '@/config'
 
 export default function SocialButtons() {
 	const socials: socialsType[] = getSocials({ exclude: 'Mail' })
-	{
-		/* 
-  const socials: socialsType[] = getSocials();
-  */
-	}
 
 	return (
 		<div className="mx-auto grid max-w-2xl grid-cols-1 gap-4 p-2 sm:grid-cols-4">
