@@ -15,6 +15,7 @@ export default function ThemeToggle() {
 				type="checkbox"
 				checked={isLight}
 				onChange={e => setTheme(e.target.checked ? light : dark)}
+				aria-label="Toggle theme between light and dark mode"
 			/>
 
 			{/* Sun (light mode) */}
