@@ -6,7 +6,7 @@ tags:
   - Language
   - Rust
 image: https://www.svgrepo.com/show/374056/rust.svg
-draft: false
+draft: true
 ---
 
 In the world of systems programming, Rust has emerged as a language that combines performance with memory safety, leading to a significant shift in how software is developed. With its adoption even in critical areas like the Linux kernel and support from entities like the US government for safer programming languages, it's clear that Rust is making waves. However, while the hype surrounding Rust is palpable, it might have addressed the wrong or less fundamental problem.
