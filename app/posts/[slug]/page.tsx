@@ -35,7 +35,7 @@ export default async function Post(props: {
 			)}
 
 			<header className="mb-4">
-				<h1 className="mb-3 text-4xl leading-tight font-bold tracking-tight">
+				<h1 className="mb-3 text-5xl leading-tight font-bold tracking-tight">
 					{title}
 				</h1>
 				<p className="text-muted-foreground text-sm text-gray-400">
