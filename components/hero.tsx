@@ -8,7 +8,7 @@ export default function Hero() {
 			<div className="hero-content w-full flex-col md:flex-row-reverse">
 				{/* Image section */}
 				{profilePic && (
-					<div className="flex w-full justify-center md:w-3/5 md:justify-center">
+					<div className="flex w-full justify-center md:w-3/5">
 						<Image
 							src={profilePic}
 							alt={siteOwner}

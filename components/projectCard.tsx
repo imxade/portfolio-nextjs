@@ -13,7 +13,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
 	return (
 		<div
-			className={`card border-2 shadow-sm ${
+			className={`card border-2 shadow-md ${
 				hover ? 'border-primary shadow-lg' : 'border-transparent'
 			}`}
 			onMouseEnter={() => setHover(true)}

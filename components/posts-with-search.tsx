@@ -26,8 +26,8 @@ export default function PostsWithSearch({ posts }: { posts: PostMetadata[] }) {
 	return (
 		<section className="py-10">
 			{/* Header */}
-			<div className="mb-8 grid gap-3 px-4 text-left md:container md:mx-auto md:text-center">
-				<h1 className="from-primary bg-gradient-to-r to-gray-400 bg-clip-text pb-[2px] text-2xl leading-tight font-bold text-transparent md:text-5xl">
+			<div className="mb-8 grid gap-3 px-4 container mx-auto text-center">
+				<h1 className="from-primary bg-gradient-to-r to-gray-400 bg-clip-text pb-[2px] leading-tight font-bold text-transparent text-5xl">
 					Posts
 				</h1>
 			</div>
