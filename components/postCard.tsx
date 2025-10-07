@@ -24,13 +24,13 @@ export default function PostCard({
 		>
 			<Link href={`/posts/${slug}`}>
 				<div className="card-body">
-					<h3
+					<h2
 						className={`card-title text-lg font-semibold ${
 							hover ? 'underline underline-offset-2' : ''
 						}`}
 					>
 						{title}
-					</h3>
+					</h2>
 					<p className="text-sm text-gray-400">
 						{formatDate(date ?? '')} • {readtime} min read
 					</p>
