@@ -1,36 +1,42 @@
-{pkgs}: {
+{ pkgs }:
+{
   channel = "unstable";
   packages = with pkgs; [
     nodejs_24
-    devenv
   ];
-  idx.extensions = [
-    "vscodevim.vim"
-    "esbenp.prettier-vscode"
-    "bradlc.vscode-tailwindcss"
-    "PulkitGangwar.nextjs-snippets"
-    "ms-python.debugpy"
-    "ms-python.python"
-  ];
-  idx.previews = {
+  idx = {
+    extensions = [
+      "vscodevim.vim"
+      "esbenp.prettier-vscode"
+      "bradlc.vscode-tailwindcss"
+      "PulkitGangwar.nextjs-snippets"
+      "ms-python.debugpy"
+      "ms-python.python"
+    ];
+    workspace.onCreate = {
+      npm-install = "npm install";
+      default.openFiles = [ "config.tsx" ];
+    };
     previews = {
-      web = {
-        command = [
-        /*
-          "docker"
-          "compose"
-          "watch"
-        */
-          "npm"
-          "run"
-          "dev"
-          "--"
-          "--port"
-          "$PORT"
-        ];
-        manager = "web";
+      previews = {
+        web = {
+          command = [
+            /*
+              "docker"
+              "compose"
+              "watch"
+            */
+            "npm"
+            "run"
+            "dev"
+            "--"
+            "--port"
+            "$PORT"
+          ];
+          manager = "web";
+        };
       };
     };
   };
-   services.docker.enable = true;
+  services.docker.enable = true;
 }
