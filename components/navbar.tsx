@@ -2,12 +2,11 @@
 
 import { routes, siteName } from '@/config'
 import ThemeToggle from '@/components/themeToggle'
-import { ThemeProvider } from 'next-themes'
 import Link from 'next/link'
 
 export default function FloatingNavbar() {
 	return (
-		<div className="fixed bottom-2 z-50 w-5/6 justify-self-center rounded-xl backdrop-blur-xl">
+		<div className="fixed bottom-2 z-50 w-8/9 justify-self-center rounded-xl backdrop-blur-xl md:w-4/5">
 			<div className="navbar shadow-lg">
 				{/* Left: siteName */}
 				<Link href={'/'} className="flex-1 px-2 text-xl font-bold">
