@@ -5,8 +5,6 @@ export default async function PostsPage() {
 	const posts = await getPosts()
 
 	return (
-		<section className="mx-auto px-4 md:px-6">
-			<PostsWithSearch posts={posts} />
-		</section>
+		<PostsWithSearch posts={posts} />
 	)
 }
