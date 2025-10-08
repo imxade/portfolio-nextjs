@@ -25,7 +25,7 @@ export function Code({
   }, [lang])
 
   if (lang === "mermaid") {
-    return <div className="mermaid">{String(children)}</div>
+    return <div className="mermaid justify-self-center">{String(children)}</div>
   }
 
   // fallback: let ReactMarkdown handle normal code blocks
