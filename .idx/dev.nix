@@ -7,11 +7,12 @@
   idx = {
     extensions = [
       "vscodevim.vim"
-      "esbenp.prettier-vscode"
       "bradlc.vscode-tailwindcss"
       "PulkitGangwar.nextjs-snippets"
       "ms-python.debugpy"
-      "ms-python.python"
+      "ms-python.python"      
+      "biomejs.biome"
+      # "esbenp.prettier-vscode"
     ];
     workspace.onCreate = {
       npm-install = "npm install";
