@@ -49,7 +49,6 @@ export type ProjectType = {
 // Site Config
 // =============================
 export const siteOwner = "Rituraj Basak"
-export const siteName = "Rituraj Basak"
 export const siteUrl = "https://riturajbasak.vercel.app"
 export const siteTitle = "Rituraj Basak"
 export const siteImage = "/favicon.png"
