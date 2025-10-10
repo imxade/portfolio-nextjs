@@ -13,7 +13,7 @@ export default async function Post(props: {
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await props.params
-  const post = await getPostBySlug(slug)
+  const post = getPostBySlug(slug)
 
   if (!post) notFound()
 

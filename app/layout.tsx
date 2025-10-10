@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { ThemeProvider } from "next-themes"
 import FloatingNavbar from "@/components/navbar"
-import { siteDescription, siteTitle } from "@/config"
+import { siteDescription, siteName, siteTitle } from "@/config"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,10 +16,10 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  applicationName: siteTitle,
+  applicationName: siteName,
   title: {
     default: siteTitle,
-    template: `%s | ${siteTitle}`,
+    template: `%s | ${siteName}`,
   },
   description: siteDescription,
   manifest: "/manifest.json",
