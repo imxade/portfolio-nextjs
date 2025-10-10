@@ -20,18 +20,19 @@ export type PostMetadata = {
   readtime: number
 }
 
-export async function getPostBySlug(slug: string): Promise<Post | null> {
-  try {
-    const filePath = path.join(rootDirectory, slug, "page.md")
-    const fileContent = fs.readFileSync(filePath, { encoding: "utf8" })
-    const { data, content } = matter(fileContent)
-    return {
-      metadata: { ...data, slug, readtime: calculateReadTime(fileContent) },
-      content,
-    }
-  } catch (_error) {
-    return null
+export function getPostBySlug(slug: string): Post {
+  const filePath = path.join(rootDirectory, slug, "page.md")
+  const fileContent = fs.readFileSync(filePath, { encoding: "utf8" })
+  const { data, content } = matter(fileContent)
+  return {
+    metadata: { ...data, slug, readtime: calculateReadTime(fileContent) },
+    content,
   }
+}
+
+export function getPostMetadata(slug: string): PostMetadata {
+  const { metadata } = getPostBySlug(slug)
+  return metadata
 }
 
 export async function getPosts(limit?: number): Promise<PostMetadata[]> {
@@ -53,11 +54,4 @@ export async function getPosts(limit?: number): Promise<PostMetadata[]> {
   } catch (_error) {
     return []
   }
-}
-
-export function getPostMetadata(slug: string): PostMetadata {
-  const filePath = path.join(rootDirectory, slug, "page.md")
-  const fileContent = fs.readFileSync(filePath, "utf8")
-  const { data } = matter(fileContent)
-  return { ...data, slug, readtime: calculateReadTime(fileContent) }
 }
