@@ -3,11 +3,10 @@
 import { useTheme } from "next-themes"
 
 export default function ThemeToggle() {
-  const { theme, setTheme } = useTheme()
-  const light = "cupcake"
-  const dark = "dracula"
-
-  const isLight = theme === light
+  const { theme, setTheme } = useTheme(),
+    light = "cupcake",
+    dark = "dracula",
+    isLight = theme === light
 
   return (
     <label className="swap swap-rotate">
