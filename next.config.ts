@@ -14,6 +14,7 @@ const withSerwist = withSerwistInit({
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  reactCompiler: true,
   images: {
     remotePatterns: [
       {
@@ -22,6 +23,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  turbopack: {},
 }
 
 export default withSerwist(nextConfig)
