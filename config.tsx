@@ -6,17 +6,15 @@ export function About() {
     <section className="mx-auto space-y-6">
       <h1 className="font-extrabold sm:text-4xl">Hi, I’m Rituraj</h1>
       <p className="text-muted-foreground leading-relaxed sm:text-lg">
-        Someone who doesn’t survive just to survive the next day, or work only to earn enough to return to work again.
-        Not part of any cycle and doesn’t want anyone else to be.
-
-        Likes to simplify things with the bigger picture in mind.
-        Wishes to see as much of the world as possible, while making life easier.
-
-        NixOS declaration enjoyer, interested in game engines, GPU computing, and models like lambda calculus.
+        Not here to just survive the next day or earn enough to repeat the
+        same. Don’t wanna be part of a cycle. Trying to make life easier while
+        having a bigger perspective. Would like to witness the world as much as
+        possible. Always trying to define the exact
+        “what?”. Into NixOS, game engines, lambda calculus ...
       </p>
       <p className="text-muted-foreground leading-relaxed italic sm:text-lg">
-        On a personal note, I still need to learn how to cook… Would love to
-        walk on an Empty Beach, Someday.
+        Need to learn how to cook... Want to
+        walk on Empty Beaches...
       </p>
     </section>
   )
