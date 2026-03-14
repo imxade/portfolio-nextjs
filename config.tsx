@@ -17,8 +17,8 @@ export function About() {
         game engines, and lambda calculus...
       </p>
       <p className="text-muted-foreground leading-relaxed italic sm:text-lg">
-        Need to learn how to cook... Love to
-        walk on an Empty Beach Someday...
+        Need to learn how to cook... Would love to
+        walk on an Empty Beach someday...
       </p>
     </section>
   )
