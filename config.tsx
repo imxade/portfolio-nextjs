@@ -10,11 +10,15 @@ export function About() {
         here to just survive the next day or earn enough to repeat the same.
         Don’t wanna be part of a cycle. Trying to make life easier while having
         a bigger perspective. Always trying to define the exact “what?”. Into
-        NixOS, game engines, lambda calculus ...
+        NixOS, game engines, lambda calculus 
+        The wannabe gud kid who likes to play with and architect software. Hopes to 
+        witness as much of the world as possible. Constantly trying to find define everything 
+        and make life easier from a bigger perspective. Into declarative systems (NixOS), 
+        game engines, and lambda calculus...
       </p>
       <p className="text-muted-foreground leading-relaxed italic sm:text-lg">
-        Need to learn how to cook... Want to
-        walk on Empty Beaches...
+        Need to learn how to cook... Love to
+        walk on an Empty Beach Someday...
       </p>
     </section>
   )
