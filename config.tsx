@@ -6,10 +6,10 @@ export function About() {
     <section className="mx-auto space-y-6">
       <h1 className="font-extrabold sm:text-4xl">Hi, I’m Rituraj</h1>
       <p className="text-muted-foreground leading-relaxed sm:text-lg">
-        The wannabe gud kid who likes to play with and architect software. Hopes to 
-        witness as much of the world as possible. Constantly trying to find define everything 
-        and make life easier from a bigger perspective. Into declarative systems (NixOS), 
-        game engines, lambda calculus...
+        The wannabe gud kid who likes to play with and architect software. 
+        Learning to rely on others and hoping to witness as much of the world as possible. 
+        Constantly trying to define things and make life easier from a bigger perspective. 
+        Into declarative systems (NixOS), game engines, and lambda calculus...
       </p>
       <p className="text-muted-foreground leading-relaxed italic sm:text-lg">
         Need to learn how to cook... Would love to
