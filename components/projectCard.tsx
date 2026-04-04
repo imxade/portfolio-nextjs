@@ -1,6 +1,6 @@
 "use client"
 
-import Image from "next/image"
+
 import { useState } from "react"
 import type { ProjectType } from "@/config"
 
@@ -19,15 +19,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <figure>
-        <Image
-          src={project.image}
-          alt={project.title}
-          className="rounded-xl p-1"
-          width={10000}
-          height={0}
-        />
-      </figure>
+
 
       <div className="card-body">
         <h2
