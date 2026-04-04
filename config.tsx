@@ -130,7 +130,7 @@ export const projects: ProjectType[] = [
       "Cross-Platform LAN-Based Remote Input Controller.",
     href: "https://github.com/AOSSIE-Org/Rein",
     source: "https://github.com/AOSSIE-Org/Rein",
-    techstack: [],
+    techstack: ["TanStack Start", "React", "Webrtc",],
     featured: true,
   },
   {
@@ -139,7 +139,7 @@ export const projects: ProjectType[] = [
       "A local, privacy-first Self-Learning Assistant that runs entirely on your machine. Features a container-first architecture and deterministic asset generation pipeline.",
     href: "https://dontcompete.vercel.app",
     source: "https://github.com/AOSSIE-Org/LibrEd",
-    techstack: [],
+    techstack: ["TanStack Start", "React", "Ollama"],
     featured: true,
   },
   {
