@@ -118,7 +118,7 @@ export const projects: ProjectType[] = [
   {
     title: "Kitsy",
     description:
-      "A fast, privacy-first progressive web app (PWA) providing handy web-based tools and image conversions without a backend.",
+      "A fast, privacy-first progressive web app (PWA for offline usage) providing handy web-based tools and image conversions without a backend.",
     href: "https://kitsy.vercel.app/",
     source: "https://github.com/imxade/kitsy",
     techstack: ["TypeScript", "PWA", "React"],
@@ -127,7 +127,7 @@ export const projects: ProjectType[] = [
   {
     title: "Rein",
     description:
-      "Cross-Platform LAN-Based Remote Input Controller.",
+      "Touch-first cross-platform remote desktop with screen mirroring, input injection, and authentication.",
     href: "https://github.com/AOSSIE-Org/Rein",
     source: "https://github.com/AOSSIE-Org/Rein",
     techstack: ["TanStack Start", "React", "Webrtc",],
